@@ -1,0 +1,15 @@
+[package]
+name = "pqconectiontest"
+version = "0.1.0"
+authors = ["Ian P. Cooke <icooke@3redpartners.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+diesel = { version = "1.4.2", features = ["postgres"] }
+pq-sys = "0.4.6"
+dotenv = "0.14.1"
+
+[patch.crates-io]
+pq-sys = { git = 'https://github.com/sgrif/pq-sys.git' }
